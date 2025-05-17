@@ -1,0 +1,14 @@
+package com.example.datn_realeaste_crm.dto.request;
+
+import jakarta.validation.constraints.NotNull;
+import lombok.Data;
+
+@Data
+public class PropertyAccessRequest {
+    
+    @NotNull(message = "User ID is required")
+    private Integer userId;
+    
+    @NotNull(message = "Property ID is required")
+    private Integer propertyId;
+}
